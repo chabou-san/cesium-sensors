@@ -480,7 +480,7 @@ define([
             // Recompile shader when material changes
             if (materialChanged || !defined(frontFaceColorCommand.shaderProgram)) {
                 var fsSource = new ShaderSource({
-                    sources: [ShadersSensorVolume, this._lateralSurfaceMaterial.shaderSource, CustomSensorVolumeFS]
+                    sources : [ShadersSensorVolume, this._lateralSurfaceMaterial.shaderSource, CustomSensorVolumeFS]
                 });
 
                 frontFaceColorCommand.shaderProgram = context.replaceShaderProgram(
@@ -516,7 +516,7 @@ define([
             // Recompile shader when material changes
             if (materialChanged || !defined(pickCommand.shaderProgram)) {
                 var pickFS = new ShaderSource({
-                    sources: [ShadersSensorVolume, this._lateralSurfaceMaterial.shaderSource, CustomSensorVolumeFS],
+                    sources : [ShadersSensorVolume, this._lateralSurfaceMaterial.shaderSource, CustomSensorVolumeFS],
                     pickColorQualifier : 'uniform'
                 });
 
